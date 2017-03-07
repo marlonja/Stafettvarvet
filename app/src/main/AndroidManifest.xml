@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.parse.stafettvarvet15">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".InfoIndex">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".InfoArea">
+        </activity>
+        <activity android:name=".InfoForetagsbyn">
+        </activity>
+        <activity android:name=".InfoKollektivtrafik">
+        </activity>
+        <activity android:name=".InfoPartners">
+        </activity>
+        <activity android:name=".InfoStartTid">
+        </activity>
+        <activity android:name=".InfoOvrigt">
+        </activity>
+        <activity android:name=".InfoTicket">
+        </activity>
+        <activity android:name=".RaceExchange">
+        </activity>
+        <activity android:name=".RaceIndex">
+        </activity>
+        <activity android:name=".ResultsIndex">
+        </activity>
+        <activity android:name=".ResultsTeam">
+        </activity>
+        <activity android:name=".ResultsTopList">
+        </activity>
+        <activity android:name=".TeamIndex">
+        </activity>
+        <activity android:name=".TeamPage">
+        </activity>
+    </application>
+
+</manifest>

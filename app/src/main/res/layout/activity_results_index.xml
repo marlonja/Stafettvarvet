@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_partners"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.stafettvarvet15.InfoPartners"
+    android:background="@color/colorPrimary">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageViewArrow"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:onClick="backButton"/>
+
+    <TextView
+        android:text="Resultat."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewArrow"
+        android:id="@+id/textViewResultat"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/exchange"
+        android:layout_below="@+id/textViewResultat"
+        android:id="@+id/imageViewMain"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:text="Resultatlistor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewMain"
+        android:id="@+id/textViewResultatlistor"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/textViewResultatlistor"
+        android:layout_height="1dip"
+        android:background="#d3d3d3"
+        android:id="@+id/line2"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/line2"
+        android:id="@+id/listViewResults"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:text="Grafer och tabeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listViewResults"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewGrafer"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/textViewGrafer"
+        android:layout_height="1dip"
+        android:background="#d3d3d3"
+        android:id="@+id/line4"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/line4"
+        android:id="@+id/listViewGrafer"/>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorWhiteOff"
+        app:itemIconTint="@drawable/tab_item_color"
+        app:itemTextColor="@drawable/tab_item_color"
+        app:menu="@menu/bottom_navigation_main"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+</RelativeLayout>

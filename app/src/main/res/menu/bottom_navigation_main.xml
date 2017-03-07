@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/info"
+        android:title="Info"/>
+
+    <item
+        android:id="@+id/race"
+        android:icon="@drawable/race"
+        android:title="Loppet"/>
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/map"
+        android:title="Karta"/>
+
+    <item
+        android:id="@+id/team"
+        android:icon="@drawable/team"
+        android:title="Team"/>
+
+    <item
+        android:id="@+id/result"
+        android:icon="@drawable/result"
+        android:title="Resultat"/>
+
+
+</menu>
